@@ -1,0 +1,30 @@
+Kegiatan 1
+
+	5. Setelah script bisa berjalan dengan baik, jawablah pertanyaan berikut ini:
+	a. Apakah kegunaan dari function fopen()? Dan jelaskan maksud dari parameter yang ada di dalam function fopen() tersebut!
+	Jawab: untuk membuka file atau url
+	b. Apa kegunaan dari function die()?
+	Jawab: saat file atau url salah atau tidak ditemukan, outputnya akan error. Untuk mengantisipasi error, kita bisa menggantinya dengan kata-kata yang kita pahami. misalkan "tidak bisa buka file!"
+	c. Apa kegunaan dari function fread()? Jelaskan maksud maksud dari parameter yang ada di dalam function fread() tersebut!
+	Jawab: fungsi fread() digunakan untuk membaca file atau url yang kita buka menggunakan fungsi fopen. ada 2 parameter dalam fungsi fread(pertama,kedua). parameter yang pertama diisikan dengan nama file/url atau variabel yang akan di read. sedangkan parameter yang kedua diisikan dengan jumlah karakter yang akan dibaca. didalam contoh, parameter kedua diisi dengan filesize() yang fungsinya untuk mengetahui jumlah karakter dalam suatu file. dengan itu juga kita dapat membaca file secara menyeluruh.
+	d. Apa kegunaan dari function fclose()? Bagaimana jika tidak menggunakan function ini setelah operasi file selesai?
+	Jawab: fungsi fclose() digunakan untuk menutup file yang telah di fopen(). menutup file merupakan hal yang baik dilakukan setelah kita selesai menggunakannya. jika tidak ditutup, file akan tetap berjalan di server dan bisa menghabiskan sumber daya.
+
+Kegiatan 2
+
+	2. Jalankan script di atas, dan amati hasilnya! Apakah output yang dihasilkan sama dengan script bacafile.php? Jika sama, apa kesimpulannya? Dan jelaskan apa perbedaan cara kerja dari kedua script tersebut!
+	Jawab: kesimpulannya, ada cara lain untuk membaca suatu file. cara 1 menggunakan fread() dengan filesize(). looping dengan cara 2 menggunakan feof() dengan fgets().
+
+	3. Jelaskan kegunaan dari function berikut ini:
+	a. feof()
+	Jawab: digunakan untuk mengecek "end-of-file" atau akhir dari file/url. selama eof belum tercapai, loop akan terus berjalan.
+	b. fgets()
+	Jawab: mengembalikan baris dari file yang telah di buka
+	
+Kegiatan 3
+	
+	3. Apa kegunaan dari function fwrite()?
+	Jawab: fungsi fwrite() adalah untuk menambahkan karakter kepada file yang terbuka.
+	
+	4. Apa yang terjadi jika perintah fopen($namaFile, "a") diganti dengan fopen($namaFile, "w")?
+	Jawab: file akan menuliskan karakter dari awal lagi (overwrite).
